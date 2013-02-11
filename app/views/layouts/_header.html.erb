@@ -1,0 +1,33 @@
+<header>
+  <form class="form-search pull-right">
+    <div class="input-append">
+      <input type="text" class="span3"
+             placeholder="Ref. number or Villa name">
+      <span class="add-on"><i class="icon-search"></i></span>
+    </div>
+  </form>
+  <div id="rental-logo">
+    <h1>Rentals</h1>
+  </div>
+  <nav>
+    <ul class="nav pull-right">
+      <li class="divider-vertical"></li>
+      <li class="<%#= 'active' if current_page?(root_path) %>">
+        <%= link_to("destinations", "#") %>
+      </li>
+      <li class="divider-vertical"></li>
+      <li class="<%#= 'active' if current_page?(villas_path) %>">
+        <%= link_to("about", "#") %>
+      </li>
+      <li class="divider-vertical"></li>
+      <li class="<%#= 'active' if current_page?(destinations_path) %>">
+      <li><%= link_to("contact", "#") %></li>
+      </li>
+      <li class="divider-vertical"></li>
+      <li class="<%#= 'active' if current_page?(services_path) %>">
+        <%= link_to("owners", "#") %>
+      </li>
+    </ul>
+  </nav>
+  <div class="clear"></div>
+</header>
