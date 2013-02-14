@@ -1,0 +1,51 @@
+<div class="destination-show">
+  <div class="tabbable"> <!-- Only required for left/right tabs -->
+    <ul class="nav nav-tabs">
+      <li class="active"><a href="#tab1" data-toggle="tab">Villas in
+        <%= @destination.name %></a></li>
+      <li><a href="#tab2" data-toggle="tab">Local Info</a></li>
+      <li><a href="#tab3" data-toggle="tab">What to do in <%= @destination.name %></a></li>
+      <li><a href="#tab4" data-toggle="tab">Airport</a></li>
+      <li><a href="#tab5" data-toggle="tab">Rent a Car in <%= @destination.name %></a></li>
+      <li><a href="#tab6" data-toggle="tab">Weather in <%= @destination.name %></a></li>
+    </ul>
+    <div class="tab-content">
+      <div class="tab-pane active" id="tab1">
+        <p class="lead">Villas for each destination go here</p>
+      </div>
+      <div class="tab-pane" id="tab2">
+        <h1><%= @destination.name %></h1>
+        <%= gmaps(
+                    :markers => { :data => @json },
+                    :map_options => { :auto_adjust => true, # :auto_adjust map to center on location
+                                      :auto_zoom => false, 	# :auto_zoom defaults to full zoom in, set to false to utilize :zoom
+                                      :zoom => 15 }		# :zoom 0 is fully zoomed out (world view), 21 is fully zoomed in (street view)
+            ) %>
+        <hr />
+        <%= raw @destination.info %>
+      </div>
+      <div class="tab-pane" id="tab3">
+        <p class="lead">What to do in <%= @destination.name %></p>
+        <%= raw @destination.todo %>
+      </div>
+      <div class="tab-pane" id="tab4">
+        <p class="lead">Airport</p>
+        <%= raw @destination.airport %>
+      </div>
+      <div class="tab-pane" id="tab5">
+        <p class="lead">Rent a Car in <%= @destination.name %></p>
+        <%= raw @destination.rentcar %>
+      </div>
+      <div class="tab-pane" id="tab6">
+        <p class="lead">Weather in <%= @destination.name %></p>
+        <%= raw @destination.weather %>
+      </div>
+    </div>
+  </div>
+
+
+  <%= link_to 'Edit', edit_destination_path(@destination) %> |
+  <%= link_to 'Back', destinations_path %>
+</div>
+
+<%= yield :scripts %>

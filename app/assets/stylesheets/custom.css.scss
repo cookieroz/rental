@@ -41,6 +41,15 @@ body {
   height: 100%;
 }
 
+.lead {
+  font-family: Candara, Calibri, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+}
+
+p, td {
+  font-family: "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans",
+  Tahoma, sans-serif;
+}
+
 #wrap {
   height: auto !important;
   height: 100%;
@@ -70,6 +79,9 @@ header {
         padding-right: 15px;
         a {
           color: #000000;
+        }
+        a.active {
+          background: #eeeeee;
         }
       }
     }
@@ -140,6 +152,46 @@ header {
   }
 }
 
+/* Destination Styles */
+
+.destination-show {
+  .map_container {
+    clear: both;
+    height: 200px;
+    width: 905px;
+    #map {
+      .gmaps4rails_map {
+        height: 200px;
+        width: 900px;
+      }
+    }
+  }
+  .nav-tabs{
+    background: #000000;
+    border: none;
+    li {
+      border: none;
+    }
+    li.active {
+      a {
+        color: #000000;
+      }
+    }
+    a {
+      border: none;
+      border-radius: 0;
+      color: #ffffff;
+      padding-bottom: 5px;
+      padding-top: 5px;
+      &:hover {
+        background: #EEEEEE;
+        border: none;
+        border-radius: 0;
+        color: #000000;
+      }
+    }
+  }
+}
 
 
 /* footer */
@@ -201,4 +253,12 @@ footer {
 
 .nickname {
   display: none;
+}
+
+/* gmaps4rails bootstrap overrides */
+#map img {
+  max-width: none;
+}
+#map label {
+  width: auto; display:inline;
 }

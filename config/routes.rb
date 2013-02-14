@@ -1,4 +1,9 @@
 Rental::Application.routes.draw do
+  mount Ckeditor::Engine => '/ckeditor'
+
+  resources :destinations
+
+
   get "static_pages/about"
 
   get "static_pages/home"

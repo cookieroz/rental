@@ -12,8 +12,8 @@
   <nav>
     <ul class="nav pull-right">
       <li class="divider-vertical"></li>
-      <li class="<%#= 'active' if current_page?(root_path) %>">
-        <%= link_to("destinations", "#") %>
+      <li>
+        <%= link_to("destinations", destinations_path, class:"#{'active' if current_page?(destinations_path)}") %>
       </li>
       <li class="divider-vertical"></li>
       <li class="<%#= 'active' if current_page?(villas_path) %>">
