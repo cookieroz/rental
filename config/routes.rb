@@ -1,4 +1,7 @@
 Rental::Application.routes.draw do
+  resources :villas
+
+
   mount Ckeditor::Engine => '/ckeditor'
 
   resources :destinations

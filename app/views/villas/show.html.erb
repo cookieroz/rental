@@ -1,0 +1,120 @@
+<div class="villa-show">
+  <div class="row">
+    <div class="span12">
+      <div id="villa-slideshow" class="pics">
+        <%# Photo.where(imageable_type: "TopPhoto").each do |photo| %>
+            <%#= link_to(image_tag(photo.url, alt: photo.caption), root_url+"#{photo.photo_link}") %>
+        <%# end %>
+        <a>
+          <img src="http://grandesvillas.com/uploads/photo/image/895/villanewmodernstyleforrent.jpg">
+        </a>
+        <a>
+          <img src="http://grandesvillas.com/uploads/photo/image/894/stunningseaviewsvilla.jpg">
+        </a>
+      </div>
+      <div id="banner">
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="span9">
+      <div class="villa-blue-box">
+        <p>
+          <strong>Sleeps:</strong> <%= @villa.sleeps %> &nbsp; &nbsp;
+          <strong>Bedrooms:</strong> <%= @villa.bedrooms %> &nbsp; &nbsp;
+          <strong>Bathrooms:</strong> <%= @villa.bathrooms %> &nbsp; &nbsp;
+          <strong>Location:</strong> <%= @villa.destination_id %> &nbsp; &nbsp;
+        </p>
+        blue box
+      </div>
+      <div class="villa-description">
+        <p class="lead">Description Luxury Villa in <%= @villa.destination_id %> </p>
+        <%= raw @villa.content %>
+      </div>
+      <div class="villa-gray-box">
+        <p class="lead">Villa Weekly Rates for <%= @villa.name %>: </p>
+        <%= raw @villa.rates %>
+      </div>
+      <div class="villa-gray-box">
+        <p class="lead font14">Observations: </p>
+        <%= raw @villa.observations %>
+      </div>
+    </div>
+    <div class="span3">
+      <div class="contact-villa-form">
+        <h3>Enquire this villa </h3>
+          <form id="new_message" class="simple_form form-horizontal" novalidate="novalidate" method="post" data-validate="true" action="/messages" accept-charset="UTF-8">
+            <div class="control-group string optional">
+              <label class="string optional control-label" for="message_tlf">Name:</label>
+              <div class="controls">
+                <input id="name" class="string optional" type="text" size="50" name="message[tlf]" data-validate="true">
+              </div>
+            </div>
+            <div class="control-group string optional nickname">
+              <label class="string optional control-label" for="message_nickname">Nickname</label>
+              <div class="controls">
+                <input id="message_nickname" class="string optional" type="text" size="50" name="message[nickname]">
+              </div>
+            </div>
+            <div class="control-group string optional">
+              <label class="string optional control-label" for="message_tlf">Email:</label>
+              <div class="controls">
+                <input id="email" class="string optional" type="text" size="50" name="message[tlf]" data-validate="true">
+              </div>
+            </div>
+            <div class="control-group string optional">
+              <label class="string optional control-label" for="message_tlf">Phone:</label>
+              <div class="controls">
+                <input id="tlf" class="string optional" type="text" size="50" name="message[tlf]" data-validate="true">
+              </div>
+            </div>
+            <div class="control-group string optional">
+              <label class="string optional control-label" for="message_tlf">Dates</label>
+              <div class="controls">
+                <input id="dates" class="string optional" type="text" size="50" name="message[tlf]" data-validate="true">
+              </div>
+            </div>
+            <div class="control-group string optional">
+              <label class="string optional control-label" for="message_tlf">Adults</label>
+              <div class="controls">
+                <input id="adults" class="string optional" type="text" size="50" name="message[tlf]" data-validate="true">
+              </div>
+            </div>
+            <div class="control-group string optional">
+              <label class="string optional control-label" for="message_tlf">Children</label>
+              <div class="controls">
+                <input id="kids" class="string optional" type="text" size="50" name="message[tlf]" data-validate="true">
+              </div>
+            </div>
+            <div class="control-group">
+              <label class="control-label" for="message_content">
+                Message:
+              </label>
+              <div class="controls">
+                <textarea id="message_content" class="text required" rows="5"
+                          name="message[content]" cols="40" data-validate="true"></textarea>
+              </div>
+            </div>
+            <div class="actions center">
+              <input class="btn btn-info pull-right" type="submit" value="Enquire" name="commit">
+            </div>
+            <div class="clear"></div>
+          </form>
+        </div>
+    </div>
+  </div>
+
+  <p class="lead padtop15">Location of <%= @villa.name %>:</p>
+    <%= gmaps(
+                :markers => { :data => @json },
+                :map_options => { :auto_adjust => true, # :auto_adjust map to center on location
+                                  :auto_zoom => false, 	# :auto_zoom defaults to full zoom in, set to false to utilize :zoom
+                                  :zoom => 15 }		# :zoom 0 is fully zoomed out (world view), 21 is fully zoomed in (street view)
+        ) %>
+
+
+  <%= link_to 'Edit', edit_villa_path(@villa) %> |
+  <%= link_to 'Back', villas_path %>
+</div>
+
+<%= yield :scripts %>

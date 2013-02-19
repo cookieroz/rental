@@ -60,7 +60,6 @@ p, td {
 
 /* Header */
 header {
-  border-bottom: 1px solid #000000;
   padding: 10px;
   #rental-logo {
     float: left;
@@ -193,6 +192,128 @@ header {
   }
 }
 
+/* Villa Styles */
+.villa-show {
+  .map_container {
+    clear: both;
+    height: 200px;
+    margin: 0 0 15px 0;
+    width: 905px;
+    #map {
+      .gmaps4rails_map {
+        height: 200px;
+        width: 900px;
+      }
+    }
+  }
+  .lead {
+    font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+    margin-bottom: 6px;
+  }
+  .villa-blue-box {
+    background: $villaBgBlue;
+    margin-top: 13px;
+    padding: 10px;
+  }
+  .villa-description {
+    margin: 15px 0 15px 0;
+  }
+  .villa-gray-box {
+    background: #eeeeee;
+    padding: 10px;
+  }
+  .pics {
+    height:  390px;
+    width:   940px;
+    padding: 0;
+    margin:  0 auto;
+    overflow: hidden;
+    img {
+      width:  940px;
+      height: 390px;
+      top:  0;
+      left: 0
+    }
+    a {
+      width:  940px;
+      height: 390px;
+    }
+  }
+  #banner {
+    background: #000000;
+    margin: -30px 0 0 -2px;
+    overflow: hidden;
+    padding: 0;
+    position: relative;
+    z-index: 4000;
+    width: 470px;
+    .activeSlide {
+      color: $villaBorderBlue;
+    }
+    a {
+      color: #ffffff;
+      display: block;
+      float: left;
+      font-family: "Arial Narrow", Arial, sans-serif;
+      font-size: 1.2em;
+      padding: 0 3px 0 3px;
+      &:hover {
+        color: $villaBgBlue;
+        text-decoration: none;
+      }
+    }
+  }
+  .span3 {
+    margin-left: 7px;
+    width: 233px;
+  }
+  .contact-villa-form {
+    background: $grayMediumLight;
+    border: 1px solid #000000;
+    color: #999;
+    margin: 0 auto;
+    position: relative;
+    z-index: 3000;
+    h3 {
+      background: #000000;
+      color: #ffffff;
+      font-size: 1.3em;
+      font-weight: 100;
+      line-break: 30px;
+      margin: 0;
+      text-align: center;
+    }
+    form.form-horizontal {
+      padding: 5px;
+      margin-bottom: 0;
+      .control-group {
+        margin-bottom: 4px;
+        label{
+          color: #000000;
+          font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+          margin-bottom: 0;
+          padding-top: 0;
+          text-align: left;
+          width: 70px;
+        }
+        .controls {
+          margin-left: 70px;
+          input, textarea {
+            border: 1px solid #000000;
+            width: 136px;
+          }
+          input[type="text"] {
+            background: #a9a9a9;
+            color: #ffffff;
+            height: 10px;
+          }
+        }
+      }
+    }
+  }
+}
+
+
 
 /* footer */
 #push {
@@ -253,6 +374,14 @@ footer {
 
 .nickname {
   display: none;
+}
+
+.font14 {
+  font-size: 14px;
+}
+
+.padtop15 {
+  padding-top: 15px;
 }
 
 /* gmaps4rails bootstrap overrides */
