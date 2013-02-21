@@ -5,6 +5,11 @@
         <%# Photo.where(imageable_type: "TopPhoto").each do |photo| %>
             <%#= link_to(image_tag(photo.url, alt: photo.caption), root_url+"#{photo.photo_link}") %>
         <%# end %>
+        <% @villa.photos.each do |photo| %>
+            <% unless photo.image.nil? %>
+                <%= link_to(image_tag(photo.url), "#") %>
+            <% end %>
+        <% end %>
         <a>
           <img src="http://grandesvillas.com/uploads/photo/image/895/villanewmodernstyleforrent.jpg">
         </a>

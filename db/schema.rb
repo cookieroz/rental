@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130215183544) do
+ActiveRecord::Schema.define(:version => 20130219195519) do
 
   create_table "ckeditor_assets", :force => true do |t|
     t.string   "data_file_name",                  :null => false
@@ -57,6 +57,21 @@ ActiveRecord::Schema.define(:version => 20130215183544) do
   add_index "friendly_id_slugs", ["slug", "sluggable_type"], :name => "index_friendly_id_slugs_on_slug_and_sluggable_type", :unique => true
   add_index "friendly_id_slugs", ["sluggable_id"], :name => "index_friendly_id_slugs_on_sluggable_id"
   add_index "friendly_id_slugs", ["sluggable_type"], :name => "index_friendly_id_slugs_on_sluggable_type"
+
+  create_table "photos", :force => true do |t|
+    t.string   "caption"
+    t.integer  "villa_id"
+    t.string   "image"
+    t.integer  "imageable_id"
+    t.string   "imageable_type"
+    t.integer  "image_uid"
+    t.string   "image_name"
+    t.string   "path"
+    t.string   "name"
+    t.integer  "position"
+    t.datetime "created_at",     :null => false
+    t.datetime "updated_at",     :null => false
+  end
 
   create_table "villas", :force => true do |t|
     t.string   "name"

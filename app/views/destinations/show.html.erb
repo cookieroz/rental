@@ -23,6 +23,9 @@
             ) %>
         <hr />
         <%= raw @destination.info %>
+        <% unless @destination.dest_image.nil? %>
+            <%= image_tag(@destination.dest_image.url, class: 'dest-img') %>
+        <% end %>
       </div>
       <div class="tab-pane" id="tab3">
         <p class="lead">What to do in <%= @destination.name %></p>

@@ -18,6 +18,11 @@
                   :input_html => { :toolbar => 'Full' } %>
     </div>
 
+    <% @destination.build_dest_image %>
+        <%= f.simple_fields_for :dest_image do |ff| %>
+        <%= ff.file_field :image, class: 'controls' %>
+    <% end %>
+
     <div class="form-actions">
       <%= f.button :submit %>
     </div>

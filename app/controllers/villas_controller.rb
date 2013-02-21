@@ -15,6 +15,10 @@ class VillasController < ApplicationController
   def show
     @villa = Villa.find(params[:id])
     @json = @villa.to_gmaps4rails
+    @images = @villa.photos
+
+    #@photo = @villa.photos.build
+    @photos = Photo.scoped(:conditions => [ 'villa_id = ?', @villa.id ] )
 
     respond_to do |format|
       format.html # show.html.erb
@@ -26,6 +30,7 @@ class VillasController < ApplicationController
   # GET /villas/new.json
   def new
     @villa = Villa.new
+    @object_new = Photo.new
 
     respond_to do |format|
       format.html # new.html.erb
@@ -36,15 +41,21 @@ class VillasController < ApplicationController
   # GET /villas/1/edit
   def edit
     @villa = Villa.find(params[:id])
+    @object_new = Photo.new
   end
 
   # POST /villas
   # POST /villas.json
   def create
-    @villa = Villa.new(params[:villa])
+    #@villa = Villa.new(params[:villa])
+    villa_data = params[:villa]
+    photo_ids = villa_data.delete :photo_ids
+    @villa = Villa.new(villa_data)
 
     respond_to do |format|
       if @villa.save
+        update_photos_with_villa_id photo_ids, @villa
+
         format.html { redirect_to @villa, notice: 'Villa was successfully created.' }
         format.json { render json: @villa, status: :created, location: @villa }
       else
@@ -58,9 +69,13 @@ class VillasController < ApplicationController
   # PUT /villas/1.json
   def update
     @villa = Villa.find(params[:id])
+    villa_data = params[:villa]
+    photo_ids = villa_data.delete :photo_ids
 
     respond_to do |format|
-      if @villa.update_attributes(params[:villa])
+      if @villa.update_attributes(villa_data)
+        update_photos_with_villa_id photo_ids, @villa
+
         format.html { redirect_to @villa, notice: 'Villa was successfully updated.' }
         format.json { head :no_content }
       else
@@ -81,4 +96,23 @@ class VillasController < ApplicationController
       format.json { head :no_content }
     end
   end
+
+  def sort_photos
+    params[:photos].each_with_index do |id, index|
+      Photo.update_all({position: index+1}, {id: id})
+    end
+
+    render nothing: true
+  end
+
+  private
+    def update_photos_with_villa_id photo_ids, villa
+      photo_ids.split(',').each do |id|
+        photo = Photo.where(id: id).first
+        if photo.present?
+          photo.imageable = villa
+          photo.save
+        end
+      end
+    end
 end

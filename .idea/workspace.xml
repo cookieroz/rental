@@ -23,64 +23,73 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="custom.css.scss" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/custom.css.scss">
+      <file leaf-file-name="photos_controller.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/controllers/photos_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="199" column="14" selection-start="3189" selection-end="3189" vertical-scroll-proportion="0.0">
+            <state line="95" column="59" selection-start="2376" selection-end="2376" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="villas.js.coffee" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/assets/javascripts/villas.js.coffee">
+      <file leaf-file-name="Gemfile" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Gemfile">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="18" selection-start="320" selection-end="320" vertical-scroll-proportion="0.0">
+            <state line="12" column="86" selection-start="253" selection-end="253" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="villa.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/models/villa.rb">
+      <file leaf-file-name="show.html.erb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/villas/show.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="3" column="50" selection-start="110" selection-end="110" vertical-scroll-proportion="0.0">
+            <state line="9" column="52" selection-start="446" selection-end="446" vertical-scroll-proportion="-5.625">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="routes.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/config/routes.rb">
+      <file leaf-file-name="villas_controller.rb" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/controllers/villas_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="22" column="7" selection-start="530" selection-end="530" vertical-scroll-proportion="0.0">
+            <state line="19" column="5" selection-start="398" selection-end="398" vertical-scroll-proportion="0.45094937">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="destination.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/models/destination.rb">
+      <file leaf-file-name="_fileupload.html.erb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/shared/_fileupload.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="48" selection-start="133" selection-end="332" vertical-scroll-proportion="0.0">
+            <state line="34" column="67" selection-start="1700" selection-end="1700" vertical-scroll-proportion="-21.25">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="_js_include_local.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/shared/fileupload/_js_include_local.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="53" column="83" selection-start="1838" selection-end="1838" vertical-scroll-proportion="-33.125">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="show.html.erb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/destinations/show.html.erb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="23" column="49" selection-start="1347" selection-end="1347" vertical-scroll-proportion="-11.875">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="_form.html.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/destinations/_form.html.erb">
+        <entry file="file://$PROJECT_DIR$/app/views/villas/_form.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="55" selection-start="714" selection-end="787" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="show.html.erb" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/views/villas/show.html.erb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="34" column="65" selection-start="1332" selection-end="1332" vertical-scroll-proportion="0.8265802">
+            <state line="24" column="2" selection-start="699" selection-end="699" vertical-scroll-proportion="-15.0">
               <folding />
             </state>
           </provider>
@@ -96,28 +105,28 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/db/migrate/20130213113242_add_slug_to_destinations.rb" />
-        <option value="$PROJECT_DIR$/db/migrate/20130213154436_rename_destinations_lat_long.rb" />
+        <option value="$PROJECT_DIR$/config/routes.rb" />
+        <option value="$PROJECT_DIR$/app/models/villa.rb" />
+        <option value="$PROJECT_DIR$/app/assets/stylesheets/application.css" />
+        <option value="$PROJECT_DIR$/app/models/photo.rb" />
+        <option value="$PROJECT_DIR$/app/views/shared/fileupload/_index.html" />
         <option value="$PROJECT_DIR$/app/models/destination.rb" />
         <option value="$PROJECT_DIR$/app/views/destinations/_form.html.erb" />
-        <option value="$PROJECT_DIR$/app/controllers/destinations_controller.rb" />
-        <option value="$PROJECT_DIR$/app/views/layouts/_footer.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/layouts/_header.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/destinations/index.html.erb" />
         <option value="$PROJECT_DIR$/app/views/destinations/show.html.erb" />
-        <option value="$PROJECT_DIR$/db/migrate/20130215183544_create_villas.rb" />
-        <option value="$PROJECT_DIR$/app/views/villas/_form.html.erb" />
-        <option value="$PROJECT_DIR$/app/models/villa.rb" />
-        <option value="$PROJECT_DIR$/app/controllers/villas_controller.rb" />
-        <option value="$PROJECT_DIR$/app/assets/javascripts/villas.js.coffee" />
-        <option value="$PROJECT_DIR$/app/assets/stylesheets/custom.css.scss" />
         <option value="$PROJECT_DIR$/app/views/villas/show.html.erb" />
+        <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/Gemfile" />
+        <option value="$PROJECT_DIR$/app/views/villas/_form.html.erb" />
+        <option value="$PROJECT_DIR$/app/controllers/photos_controller.rb" />
+        <option value="$PROJECT_DIR$/app/views/shared/_fileupload.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/shared/fileupload/_js_include_local.html" />
+        <option value="$PROJECT_DIR$/app/controllers/villas_controller.rb" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="225" />
-    <option name="y" value="29" />
+    <option name="x" value="182" />
+    <option name="y" value="32" />
     <option name="width" value="1082" />
     <option name="height" value="800" />
   </component>
@@ -240,24 +249,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="db" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="migrate" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="rental" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="rental" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="config" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -320,6 +311,54 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="shared" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="rental" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="rental" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="shared" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="fileupload" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="rental" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="rental" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="destinations" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -335,6 +374,10 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="uploaders" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -353,6 +396,20 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="models" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="rental" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="rental" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -550,6 +607,24 @@
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="FULL_BACKTRACE" VALUE="false" />
       <method />
     </configuration>
+    <configuration default="true" type="RubyRunConfigurationType" factoryName="Ruby">
+      <module name="" />
+      <RUBY_RUN_CONFIG NAME="RUBY_ARGS" VALUE="-e $stdout.sync=true;$stderr.sync=true;load($0=ARGV.shift)" />
+      <RUBY_RUN_CONFIG NAME="WORK DIR" VALUE="" />
+      <RUBY_RUN_CONFIG NAME="SHOULD_USE_SDK" VALUE="false" />
+      <RUBY_RUN_CONFIG NAME="ALTERN_SDK_NAME" VALUE="" />
+      <RUBY_RUN_CONFIG NAME="myPassParentEnvs" VALUE="true" />
+      <envs />
+      <EXTENSION ID="BundlerRunConfigurationExtension" bundleExecEnabled="false" />
+      <EXTENSION ID="RubyCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" track_test_folders="true" runner="rcov">
+        <COVERAGE_PATTERN ENABLED="true">
+          <PATTERN REGEXPS="/.rvm/" INCLUDED="false" />
+        </COVERAGE_PATTERN>
+      </EXTENSION>
+      <RUBY_RUN_CONFIG NAME="SCRIPT_PATH" VALUE="" />
+      <RUBY_RUN_CONFIG NAME="SCRIPT_ARGS" VALUE="" />
+      <method />
+    </configuration>
     <configuration default="true" type="TestUnitRunConfigurationType" factoryName="Test::Unit/Shoulda/Minitest">
       <predefined_log_file id="RUBY_TESTUNIT" enabled="true" />
       <module name="" />
@@ -691,14 +766,14 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="225" y="29" width="1082" height="800" extended-state="0" />
+    <frame x="182" y="32" width="1082" height="800" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3291506" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2596525" sideWeight="0.3257468" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.27027026" sideWeight="0.66429585" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.261583" sideWeight="0.67140824" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32859176" sideWeight="0.50096524" order="7" side_tool="true" content_ui="tabs" />
@@ -767,98 +842,103 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/views/layouts/_footer.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="49" selection-start="371" selection-end="371" vertical-scroll-proportion="0.24671052" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/layouts/_header.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="108" selection-start="511" selection-end="511" vertical-scroll-proportion="-9.375" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/destinations/index.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="47" selection-start="599" selection-end="599" vertical-scroll-proportion="-15.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/gmaps4rails.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="77" selection-start="323" selection-end="323" vertical-scroll-proportion="0.3322785" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/db/migrate/20130215183544_create_villas.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="36" selection-start="533" selection-end="533" vertical-scroll-proportion="0.5221519" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/destinations_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="45" selection-start="395" selection-end="430" vertical-scroll-proportion="0.26655897" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/villas_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="43" selection-start="239" selection-end="239" vertical-scroll-proportion="0.23734178" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/destinations/show.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="50" column="0" selection-start="2133" selection-end="2154" vertical-scroll-proportion="-21.333334" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/villa.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="50" selection-start="110" selection-end="110" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/routes.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="7" selection-start="530" selection-end="530" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/models/destination.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="48" selection-start="133" selection-end="332" vertical-scroll-proportion="0.0">
+        <state line="20" column="83" selection-start="550" selection-end="550" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/destinations/_form.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="55" selection-start="714" selection-end="787" vertical-scroll-proportion="0.0">
+        <state line="21" column="88" selection-start="897" selection-end="897" vertical-scroll-proportion="-13.125">
+          <folding>
+            <marker date="1361308757000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1361308757000" expanded="true" signature="-1:-1" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/villas/show.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="52" selection-start="446" selection-end="446" vertical-scroll-proportion="-5.625">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/villas.js.coffee">
+    <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="18" selection-start="320" selection-end="320" vertical-scroll-proportion="0.0">
+        <state line="15" column="14" selection-start="444" selection-end="444" vertical-scroll-proportion="0.35601267">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Gemfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="86" selection-start="253" selection-end="253" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/destinations/show.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="23" column="49" selection-start="1347" selection-end="1347" vertical-scroll-proportion="-11.875">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/shared/fileupload/_index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="29" column="78" selection-start="1555" selection-end="1555" vertical-scroll-proportion="0.7050243">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/shared/fileupload/_js_include_remote.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="83" column="71" selection-start="3472" selection-end="3472" vertical-scroll-proportion="0.60504204">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/villas/_form.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="29" selection-start="609" selection-end="609" vertical-scroll-proportion="-10.0">
+        <state line="24" column="2" selection-start="699" selection-end="699" vertical-scroll-proportion="-15.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/custom.css.scss">
+    <entry file="file://$PROJECT_DIR$/app/controllers/photos_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="199" column="14" selection-start="3189" selection-end="3189" vertical-scroll-proportion="0.0">
+        <state line="95" column="59" selection-start="2376" selection-end="2376" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/villas/show.html.erb">
+    <entry file="file://$PROJECT_DIR$/app/views/shared/_fileupload.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="34" column="65" selection-start="1332" selection-end="1332" vertical-scroll-proportion="0.8265802">
+        <state line="34" column="67" selection-start="1700" selection-end="1700" vertical-scroll-proportion="-21.25">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/shared/fileupload/_queue.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="63" selection-start="981" selection-end="981" vertical-scroll-proportion="0.40336135">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/shared/fileupload/_js_include_local.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="53" column="83" selection-start="1838" selection-end="1838" vertical-scroll-proportion="-33.125">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/villas_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="19" column="5" selection-start="398" selection-end="398" vertical-scroll-proportion="0.45094937">
           <folding />
         </state>
       </provider>

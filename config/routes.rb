@@ -1,15 +1,21 @@
 Rental::Application.routes.draw do
-  resources :villas
-
 
   mount Ckeditor::Engine => '/ckeditor'
 
   resources :destinations
+  resources :villas do
+    collection { post :sort_photos }
+   # collection { post :search, to: 'villas#index' }
+  end
 
 
   get "static_pages/about"
 
   get "static_pages/home"
+
+  resources :photos
+
+  resources :shared
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

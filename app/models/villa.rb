@@ -2,9 +2,11 @@ class Villa < ActiveRecord::Base
   belongs_to :destination
 
   attr_accessible :bathrooms, :bedrooms, :content, :latitude, :longitude, :name,
-                  :observations, :rates, :sleeps, :destination_id
+                  :observations, :rates, :sleeps, :destination_id, :photos_attributes
 
   validates :name,  :presence => true
+
+  has_many :photos, :as => :imageable, :dependent => :destroy, :order => :position
 
   acts_as_gmappable
 
