@@ -13,13 +13,17 @@ class Photo < ActiveRecord::Base
   #one convenient method to pass jq_upload the necessary information
   def to_jq_upload
     {
-        "id" => id,
-        "name" => read_attribute(:image),
-        "size" => image.size,
-        "url" => image.url,
-        "thumbnail_url" => image.thumb.url,
-        "delete_url" => photo_path(:id => id),
-        "delete_type" => "DELETE"
+      "files" => [
+        {
+          "id" => id,
+          "name" => read_attribute(:image),
+          "size" => image.size,
+          "url" => image.url,
+          "thumbnail_url" => image.thumb.url,
+          "delete_url" => photo_path(:id => id),
+          "delete_type" => "DELETE"
+        }
+      ]
     }
   end
 

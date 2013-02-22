@@ -53,12 +53,12 @@ class PhotosController < ApplicationController
     if @photo.save
       respond_to do |format|
         format.html {
-          render :json => [@photo.to_jq_upload].to_json,
+          render :json => @photo.to_jq_upload.to_json,
                  :content_type => 'text/html',
                  :layout => false
         }
         format.json {
-          render :json => [@photo.to_jq_upload].to_json
+          render :json => @photo.to_jq_upload.to_json
         }
       end
     else

@@ -6,7 +6,7 @@
         $('#fileupload').fileupload().bind('fileuploaddone', function (e, data) {
             // Store uploaded photo id's in a hidden input,
             // then the id's will be used to build villa-photo relationships
-            var pid = data.result[0].id;
+            var pid = data.result["files"][0].id;
             var val = $("#villa_photo_ids").val();
             var new_val = "";
 

@@ -1,5 +1,6 @@
 <%= simple_form_for(@villa) do |f| %>
   <%= f.error_notification %>
+  <%= f.hidden_field :photo_ids, value: "" %>
 
   <div class="form-inputs">
     <%= f.input :name %>

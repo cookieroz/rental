@@ -59,6 +59,7 @@ class VillasController < ApplicationController
         format.html { redirect_to @villa, notice: 'Villa was successfully created.' }
         format.json { render json: @villa, status: :created, location: @villa }
       else
+        @object_new = Photo.new
         format.html { render action: "new" }
         format.json { render json: @villa.errors, status: :unprocessable_entity }
       end
