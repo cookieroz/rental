@@ -25,7 +25,7 @@
     <td><%= villa.sleeps %></td>
     <td><%= villa.bedrooms %></td>
     <td><%= villa.bathrooms %></td>
-    <td><%= villa.content %></td>
+    <td><%= truncate(strip_tags(villa.content), :length => 42) %></td>
     <td><%= villa.rates %></td>
     <td><%= villa.observations %></td>
     <td><%= villa.latitude %></td>

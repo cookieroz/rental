@@ -1,7 +1,8 @@
+<% provide(:title, @destination.name) %>
 <div class="destination-show">
   <div class="tabbable"> <!-- Only required for left/right tabs -->
     <ul class="nav nav-tabs">
-      <li class="active"><a href="#tab1" data-toggle="tab">Villas in
+      <li class="active"><a href="#tab1" data-toggle="tab">Vaction Rentals in
         <%= @destination.name %></a></li>
       <li><a href="#tab2" data-toggle="tab">Local Info</a></li>
       <li><a href="#tab3" data-toggle="tab">What to do in <%= @destination.name %></a></li>
@@ -11,21 +12,47 @@
     </ul>
     <div class="tab-content">
       <div class="tab-pane active" id="tab1">
-        <p class="lead">Villas for each destination go here</p>
+        <p class="lead"><%= @destination.name %> Vacation Rentals</p>
+        <ul class="thumbnails">
+          <% @villas.each do |villa| %>
+              <li class="span3 zebra">
+                <div class="thumbnail">
+                  <% unless villa.photos.first.nil? %>
+                      <%= link_to image_tag(villa.photos.first.url), villa %>
+                  <% end %>
+                  <p class="lead"><%= link_to villa.name, villa %></p>
+                  <div class="destination-show-link">
+                    <ul class="unstyled">
+                      <li>Sleeps: <%= villa.sleeps %></li>
+                      <li>Bedrooms: <%= villa.bedrooms %></li>
+                    </ul>
+                    <h3 class="center">Villa Price</h3>
+                  </div>
+                </div>
+              </li>
+          <% end %>
+        </ul>
       </div>
       <div class="tab-pane" id="tab2">
-        <h1><%= @destination.name %></h1>
-        <%= gmaps(
-                    :markers => { :data => @json },
-                    :map_options => { :auto_adjust => true, # :auto_adjust map to center on location
-                                      :auto_zoom => false, 	# :auto_zoom defaults to full zoom in, set to false to utilize :zoom
-                                      :zoom => 15 }		# :zoom 0 is fully zoomed out (world view), 21 is fully zoomed in (street view)
-            ) %>
+        <div class="row">
+          <div class="span7">
+            <% unless @destination.dest_image.nil? %>
+                <%= image_tag(@destination.dest_image.url, class: 'dest-img') %>
+            <% end %>
+            <h1><%= @destination.name %></h1>
+          </div>
+          <div class="span5 no-left-margin">
+            <%= gmaps(
+                        :markers => { :data => @json },
+                        :map_options => { :auto_adjust => true, # :auto_adjust map to center on location
+                                          :auto_zoom => false, 	# :auto_zoom defaults to full zoom in, set to false to utilize :zoom
+                                          :type => "HYBRID",   # HYBRID, ROADMAP, SATELLITE, TERRAIN
+                                          :zoom => 13, }		# :zoom 0 is fully zoomed out (world view), 21 is fully zoomed in (street view)
+                ) %>
+          </div>
+        </div>
         <hr />
         <%= raw @destination.info %>
-        <% unless @destination.dest_image.nil? %>
-            <%= image_tag(@destination.dest_image.url, class: 'dest-img') %>
-        <% end %>
       </div>
       <div class="tab-pane" id="tab3">
         <p class="lead">What to do in <%= @destination.name %></p>

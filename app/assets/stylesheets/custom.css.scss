@@ -155,15 +155,24 @@ header {
 
 .destination-show {
   .map_container {
+    border: none;
     clear: both;
-    height: 200px;
-    width: 905px;
+    height: 270px;
+    padding: 0;
+    width: 400px;
     #map {
       .gmaps4rails_map {
-        height: 200px;
-        width: 900px;
+        height: 270px;
+        width: 400px;
       }
     }
+  }
+  .span5 {
+    width: 400px;
+  }
+  img.dest-img {
+    height: 200px;
+    width: 550px;
   }
   .nav-tabs{
     background: #000000;
@@ -190,7 +199,62 @@ header {
       }
     }
   }
+  ul.thumbnails {
+    li.span3{
+      border: none;
+      .thumbnail {
+        border: none;
+        border-radius: 0;
+        box-shadow: none;
+        padding: 0;
+        .lead {
+          margin: 0;
+          padding: 0 5px 0 5px;
+          a {
+            color: #ffffff;
+            font-weight: lighter;
+          }
+        }
+        ul {
+          padding: 0 5px;
+        }
+        h3 {
+          font-weight: 100;
+          margin: 0;
+        }
+      }
+    }
+    li.zebra {
+      background: #000000;
+      color: #ffffff;
+    }
+    li.zebra-even {
+      background: #ffffff;
+      color: #000000;
+      .thumbnail .lead a {
+        color: #000000;
+      }
+    }
+  }
 }
+
+.dest-index {
+  .span7 img {
+    height: 200px;
+    width: 700px;
+  }
+  .zebra-index {
+    background: #000000;
+    color: #ffffff;
+  }
+  .zebra-even {
+    background: #ffffff;
+    color: #000000;
+  }
+}
+
+
+
 
 /* Villa Styles */
 .villa-show {
@@ -356,6 +420,10 @@ footer {
   clear: both;
 }
 
+.center {
+  text-align: center;
+}
+
 .no-left-margin {
   margin-left: 0px;
 }
@@ -382,12 +450,4 @@ footer {
 
 .padtop15 {
   padding-top: 15px;
-}
-
-/* gmaps4rails bootstrap overrides */
-#map img {
-  max-width: none;
-}
-#map label {
-  width: auto; display:inline;
 }

@@ -1,6 +1,6 @@
 class Destination < ActiveRecord::Base
   attr_accessible :airport, :info, :latitude, :longitude, :name, :rentcar, :todo, :weather,
-      :villas_attributes, :dest_image_attributes
+                  :address, :villas_attributes, :dest_image_attributes
 
   validates :name,  :presence => true
 
@@ -10,10 +10,12 @@ class Destination < ActiveRecord::Base
   accepts_nested_attributes_for :villas
   accepts_nested_attributes_for :dest_image
 
-  acts_as_gmappable
+  acts_as_gmappable :latitude => 'latitude', :longitude => 'longitude', :process_geocoding => :geocode?,
+                    :address => "address", :normalized_address => "address",
+                    :msg => "Sorry, not even Google could figure out where that is"
 
-  def gmaps4rails_address
-    "#{self.latitude}, #{self.longitude}"
+  def geocode?
+    (!address.blank? && (latitude.blank? || longitude.blank?)) || address_changed?
   end
 
   extend FriendlyId

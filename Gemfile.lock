@@ -204,8 +204,8 @@ DEPENDENCIES
   factory_girl_rails
   friendly_id (~> 4.0.9)
   gmaps4rails (= 1.5.5)
-  jquery-fileupload-rails (= 0.4.1)
-  jquery-rails (= 2.1.4)
+  jquery-fileupload-rails
+  jquery-rails
   json (= 1.7.5)
   letter_opener (= 0.1.0)
   mini_magick (= 3.4)

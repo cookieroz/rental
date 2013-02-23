@@ -14,6 +14,7 @@ class DestinationsController < ApplicationController
   # GET /destinations/1.json
   def show
     @destination = Destination.find(params[:id])
+    @villas = @destination.villas
 
     @json = @destination.to_gmaps4rails
 
