@@ -76,7 +76,10 @@
         $.getJSON($('#fileupload').prop('action')+'?villa_id=<%= @villa.id %>', function (files) {
           var fu = $('#fileupload').data('blueimpFileupload'), template;
           fu._adjustMaxNumberOfFiles(-files.length);
-          var f = files[0]["files"];
+          var f = []
+          $.each(files, function(index, file){
+            f.push(file["files"][0])
+          })
           template = fu._renderDownload(f)
             .appendTo($('#fileupload .files'));
           // Force reflow:
