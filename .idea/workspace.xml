@@ -41,10 +41,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="production.rb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="production.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/config/environments/production.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="30" column="22" selection-start="1129" selection-end="1129" vertical-scroll-proportion="0.7020281">
+            <state line="31" column="62" selection-start="1231" selection-end="1231" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="application.js" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/assets/javascripts/application.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="14" column="25" selection-start="647" selection-end="647" vertical-scroll-proportion="0.32761312">
               <folding />
             </state>
           </provider>
@@ -96,7 +105,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/app/views/shared/fileupload/_js_include_local.html" />
         <option value="$PROJECT_DIR$/app/controllers/villas_controller.rb" />
         <option value="$PROJECT_DIR$/app/views/destinations/_form.html.erb" />
         <option value="$PROJECT_DIR$/app/models/destination.rb" />
@@ -112,6 +120,7 @@
         <option value="$PROJECT_DIR$/app/views/destinations/index.html.erb" />
         <option value="$PROJECT_DIR$/app/assets/javascripts/destinations.js.coffee" />
         <option value="$PROJECT_DIR$/config/environments/production.rb" />
+        <option value="$PROJECT_DIR$/app/assets/javascripts/application.js" />
       </list>
     </option>
   </component>
@@ -473,6 +482,28 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="rental" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="rental" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="assets" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="javascripts" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
     </panes>
@@ -803,13 +834,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/models/destination.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="21" selection-start="848" selection-end="848" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/gmaps4rails.css">
       <provider selected="true" editor-type-id="text-editor">
         <state line="30" column="1" selection-start="570" selection-end="570" vertical-scroll-proportion="0.6880734" />
@@ -908,7 +932,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/config/environments/production.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="22" selection-start="1129" selection-end="1129" vertical-scroll-proportion="0.7020281">
+        <state line="31" column="62" selection-start="1231" selection-end="1231" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/application.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="25" selection-start="647" selection-end="647" vertical-scroll-proportion="0.32761312">
           <folding />
         </state>
       </provider>
