@@ -3,59 +3,88 @@
 <div class="dest-index">
   <div class="row">
     <div class="span2">
-      Filter form goes here
+      <form class="destination-index-form">
+        <fieldset>
+          <legend>Filter your search</legend>
+          <label>Location:</label>
+          <select>
+            <% @destinations.each do |destination| %>
+                <option><%= destination.name  %></option>
+            <% end %>
+          </select>
+          <label>Features:</label>
+          <label class="checkbox">
+            <input type="checkbox"> Private Pool
+          </label>
+          <label class="checkbox">
+            <input type="checkbox"> Air Conditioning
+          </label>
+          <label class="checkbox">
+            <input type="checkbox"> Satellite TV
+          </label>
+          <label class="checkbox">
+            <input type="checkbox"> Internet
+          </label>
+          <label>Price:</label>
+          <label class="checkbox">
+            <input type="checkbox"> - 500&euro;
+          </label>
+          <label class="checkbox">
+            <input type="checkbox"> 500&euro; - 1.000&euro;
+          </label>
+          <label class="checkbox">
+            <input type="checkbox"> 1.000&euro; - 1.500&euro;
+          </label>
+          <label class="checkbox">
+            <input type="checkbox"> + 1.500&euro;
+          </label>
+          <div class="center">
+            <button type="submit" class="btn">Submit</button>
+          </div>
+        </fieldset>
+      </form>
     </div>
     <div class="span10">
-      Destinations go here
       <% @destinations.each do |destination| %>
         <div class="row">
-          <p class="lead span10"><%= destination.name %></p>
+          <p class="lead span10"><%= link_to destination.name, destination  %></p>
           <div class="span7">
             <% unless destination.dest_image.nil? %>
                 <%= link_to image_tag(destination.dest_image.url), destination %>
             <% end %>
           </div>
-          <div class="span3 zebra-index">
+          <div class="span3 zebra-index no-left-margin">
             <p><%= raw truncate(strip_tags(destination.info), :length => 200) %></p>
+            <%= link_to 'Show', destination %> |
+            <%= link_to 'Edit', edit_destination_path(destination) %> |
+            <%= link_to 'Destroy', destination, method: :delete, data: { confirm: 'Are you sure?' } %>
           </div>
+        </div>
+        <div class="span10 no-left-margin">
+          <h5>Featured Vacation Rentals in <%= link_to destination.name, destination  %></h5>
+          <ul class="thumbnails">
+            <% destination.villas.each do |villa| %>
+                <li class="span2 zebra">
+                  <div class="thumbnail">
+                    <% unless villa.photos.first.nil? %>
+                        <%= link_to image_tag(villa.photos.first.url), villa %>
+                    <% end %>
+                    <p><%= link_to villa.name, villa %></p>
+                    <div class="destination-show-link">
+                      <ul class="unstyled">
+                        <li>Sleeps: <%= villa.sleeps %></li>
+                        <li>Bedrooms: <%= villa.bedrooms %></li>
+                      </ul>
+                    </div>
+                  </div>
+                </li>
+            <% end %>
+          </ul>
         </div>
       <% end %>
     </div>
   </div>
 </div>
-
-<h1>Listing destinations</h1>
-
-<table>
-  <tr>
-    <th>Name</th>
-    <th>Info</th>
-    <th>Todo</th>
-    <th>Airport</th>
-    <th>Rentcar</th>
-    <th>Weather</th>
-    <th>Lat</th>
-    <th>Lng</th>
-    <th></th>
-    <th></th>
-    <th></th>
-  </tr>
-
-<% @destinations.each do |destination| %>
-  <tr>
-    <td><%= destination.name %></td>
-    <td><%= raw truncate(strip_tags(destination.info), :length => 42) %></td>
-    <td><%= raw truncate(strip_tags(destination.todo), :length => 42) %></td>
-    <td><%= raw truncate(strip_tags(destination.airport), :length => 42) %></td>
-    <td><%= raw truncate(strip_tags(destination.rentcar), :length => 42) %></td>
-    <td><%= raw truncate(strip_tags(destination.weather), :length => 42) %></td>
-    <td><%= destination.address %></td>
-    <td><%= link_to 'Show', destination %></td>
-    <td><%= link_to 'Edit', edit_destination_path(destination) %></td>
-    <td><%= link_to 'Destroy', destination, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-  </tr>
-<% end %>
-</table>
 
 <br />
 
