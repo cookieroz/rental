@@ -1,78 +1,116 @@
-<div id="home-slideshow" class="pics">
-  <img src="http://grandesvillas.com/uploads/photo/image/893/villaandalusiavillamorocco.jpg">
-</div>
-
-<div class="rental-home-filter">
-  <form id="villa_search" class="villa_search" method="post" action="/villas/search" accept-charset="UTF-8">
-    <div style="margin:0;padding:0;display:inline">
-      <input type="hidden" value="✓" name="utf8">
-      <input type="hidden" value="MtQ4AjWrLYAWFH6m7wqpSF7xIn+2BjNm/1jJm2MIOvU=" name="authenticity_token">
-    </div>
-    <div class="row">
-      <select id="locations" name="q[locations_id_eq]" class="rental-select">
-        <option value="">Where would you like to go on holiday?</option>
-        <option value="1">Almunecar</option>
-        <option value="5">La Herradura</option>
-        <option value="3">Las Alpujarras</option>
-        <option value="6">Morocco/Marruecos - Tetouan</option>
-        <option value="4">Motril</option>
-        <option value="2">Salobrena</option>
-      </select>
-    </div>
-    <div class="row">
-      <div class="span3 no-left-margin">
-        <select id="q_bedrooms_gteq" name="q[bedrooms_gteq]">
-          <option value="">Filter by Bedrooms</option>
-          <option value="1">1</option>
-          <option value="2">2</option>
-          <option value="3">3</option>
-          <option value="4">4</option>
-          <option value="5">5</option>
-          <option value="+6">+6</option>
-        </select>
-        <select id="q_locations_id_eq" name="q[locations_id_eq]">
-          <option value="">Testing</option>
-          <option value="1">testing 2</option>
-        </select>
+<div class="row">
+  <div class="rental-home-top">
+    <div class="span3 no-left-margin">
+      <div class="rental-home-map">
+        <p class="lead">View Map</p>
       </div>
-      <div class="span2">
-        <div class="input-append">
-          <input id="start_date" type="text" placeholder="Check-in" name="start_date"
-                 data-behaviour="datepicker">
-        <span class="add-on">
-        <i class="icon-calendar"></i>
-        </span>
-        </div>
-        <div class="input-append">
-          <input id="end_date" type="text" placeholder="Check-out" name="end_date"
-                 data-behaviour="datepicker">
-        <span class="add-on">
-        <i class="icon-calendar"></i>
-        </span>
-        </div>
+      <div class="rental-home-filter">
+        <form>
+          <select id="locations" name="q[locations_id_eq]" class="rental-select">
+            <option value="">Where would you like to go?</option>
+            <option value="1">Almunecar</option>
+            <option value="5">La Herradura</option>
+            <option value="3">Las Alpujarras</option>
+            <option value="6">Morocco/Marruecos - Tetouan</option>
+            <option value="4">Motril</option>
+            <option value="2">Salobrena</option>
+          </select>
+          <div class="input-append pull-left">
+            <input id="start_date" type="text" placeholder="Check-in" name="start_date"
+                   data-behaviour="datepicker">
+            <span class="add-on">
+              <i class="icon-calendar"></i>
+            </span>
+          </div>
+          <div class="input-append pull-right">
+            <input id="end_date" type="text" placeholder="Check-out" name="end_date"
+                   data-behaviour="datepicker">
+            <span class="add-on">
+              <i class="icon-calendar"></i>
+            </span>
+          </div>
+          <select id="q_bedrooms_gteq" name="q[bedrooms_gteq]">
+            <option value="">Filter by Bedrooms</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="+6">+6</option>
+          </select>
+          <input class="btn btn-warning clear" type="submit" value="Search" name="commit">
+        </form>
       </div>
     </div>
-    <div class="row home-search-btn">
-      <input class="btn btn-warning" type="submit" value="Search" name="commit">
+    <div class="span9 no-left-margin">
+      <div id="home-slideshow" class="pics">
+        <%= link_to image_tag("rental-home-pic.jpg"), "#" %>
+      </div>
     </div>
-  </form>
+    <div class="clear"></div>
+  </div>
 </div>
-<div class="clear"></div>
 
 <div class="rental-home-row-2 row">
-  <div class="span6">
+  <div class="span7">
     <div class="top-destinations-home">
-      <p class="lead">Top Destinations Box</p>
-      <p class="lead">Featured Villas Section</p>
+      <p class="lead">Bravo Travel Guides</p>
+      <hr>
+      <%= link_to image_tag("rental-home-pic.jpg", class: "home-travel-img"), "#",
+                  class: "pull-left" %>
+      <div class="home-travel-text pull-right">
+        <p class="lead">Latest Guide:</p>
+        <h4>Lake Tahoe</h4>
+        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
+          laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi
+          architecto beatae.</p>
+        <input class="btn btn-warning" type="submit" value="Guide File">
+      </div>
+      <div class="clear"></div>
+      <div class="featured-rentals">
+        <p class="lead">Featured Properties</p>
+        <ul class="thumbnails">
+          <li class="span3">
+            <div class="thumbnail">
+              <%= link_to image_tag("rental-home-pic.jpg"), "#" %>
+              <p><%= link_to "Rental Property", "#" %></p>
+              <div class="destination-show-link">
+                <ul class="unstyled">
+                  <li>Sleeps: 9</li>
+                  <li>Location: Destination</li>
+                  <li>Bedrooms: 4</li>
+                </ul>
+              </div>
+            </div>
+          </li>
+          <li class="span3">
+            <div class="thumbnail">
+              <%= link_to image_tag("rental-home-pic.jpg"), "#" %>
+              <p><%= link_to "Rental Property", "#" %></p>
+              <div class="destination-show-link">
+                <ul class="unstyled">
+                  <li>Sleeps: 9</li>
+                  <li>Location: Destination</li>
+                  <li>Bedrooms: 4</li>
+                </ul>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
     </div>
   </div>
-  <div class="span6">
-    <div class="car-rental pull-right">
-      <iframe frameborder="0" style="height: 260px; width: 320px; border-width: 1px;
-              border-style: solid; border-color: #065471;"
-              src="http://www.carhireengine.co.uk/carhireengine/carhireengine.web.servlets.CarHireEngineSearchControlServlet?affiliate=grandesvillas&dm=1&fv=1&pagebm=1px&pagebg=white&formtbp=1px&formlm=auto&formrm=auto&formbg=%23ffffff&formrc=none&formt=_parent&titlet=Car%20Hire&titlea=center&titlefc=%23025f7d&titleff=Arial%2C%20Helvetica&titlefs=18px&titleb=bold&titleu=none&labelsva=middle&labelsha=right&labelsfc=black&labelsff=Arial%2C%20Helvetica&labelsfs=12px&inputsfc=025f7d&inputsff=Arial%2C%20Helvetica&inputsfs=13px&submittype=button&submitfc=black&submitff=Arial%2C%20Helvetica&submitfs=18px&pickupsearchscope=world&autosuggesthc=%233398CC&carclass=all&trackcode=">
-
-      </iframe>
+  <div class="span5 right-home-div">
+    <div class="season-break">
+      <p class="lead">Season Break Ideas</p>
+      <hr>
+      season break
+      <ul class="unstyled">
+        <li> > Spring rental destinations </li>
+        <li> > Summer rental destinations</li>
+        <li> > Fall rental destinations</li>
+        <li> > Winter rental destinations </li>
+      </ul>
     </div>
   </div>
 </div>

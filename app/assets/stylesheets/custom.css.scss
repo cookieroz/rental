@@ -63,7 +63,8 @@ header {
   padding: 10px;
   #rental-logo {
     float: left;
-    padding-top: 10px;
+    margin-top: -10px;
+    padding-left: 25px;
     text-align: center;
     width: 200px;
   }
@@ -88,65 +89,136 @@ header {
 }
 
 /* Home page styles */
-#home-slideshow {
-  box-shadow: 3px 3px 3px #888888;
-}
 
-.rental-home-filter {
-  background: #ffffff;
-  border: 1px solid $darkGold;
-  height: 145px;
-  margin: -275px 0 100px 275px;
-  padding: 15px;
-  position: relative;
-  width: 390px;
-  z-index: 100;
-  form {
-    margin-bottom: 10px;
+.rental-home-top {
+  border: 1px solid #000000;
+  margin-left: 10px;
+  padding: 5px;
+  .span3 {
+    width: 238px;
   }
-  form {
-    position: relative;
-    select.rental-select {
-      width: 400px;
-    }
-    .span3 {
-
-    }
-    .span2 {
-      *display: inline;
-      *min-height: 10px;
-      *position: absolute;
-      *right: 0;
-      *top: 0;
-    }
-    .input-append {
-      margin-bottom: 10px;
-      *display: inline;
-    }
-    .add-on {
-      margin-bottom: -30px;
-      margin-left: 0;
-      position: relative;
-      z-index: 200;
-    }
-    #start_date, #end_date {
-      width: 120px;
-    }
-    .row {
-      padding-left: 15px;
-    }
-  }
-  .home-search-btn {
-    margin: 0 auto;
+  .rental-home-map {
+    background: #ffffff;
+    border: 1px solid #000000;
+    box-shadow: 3px 3px 3px #888888;
+    height: 120px;
+    margin: -10px auto 0 auto;
     text-align: center;
+    width: 200px;
+    .lead {
+      padding-top: 40px;
+    }
+  }
+  .rental-home-filter {
+    background: #ffffff;
+    border: none;
+    margin: 10px 0 0 0;
+    padding: 0;
+    position: relative;
+    width: 226px;
+    z-index: 100;
+    form {
+      position: relative;
+      select {
+        height: 24px;
+        padding: 0;
+        width: 234px;
+      }
+      select.rental-select {
+        border-color: #000000;
+        color: #000000;
+        font-size: 16px;
+        line-height: 18px;
+      }
+      .input-append {
+        margin-bottom: 10px;
+        *display: inline;
+      }
+      .add-on {
+        margin-bottom: -30px;
+        margin-left: 0;
+        position: relative;
+        z-index: 200;
+      }
+      #start_date, #end_date {
+        width: 70px;
+      }
+    }
+    .home-search-btn {
+      margin: 0 auto;
+      text-align: center;
+    }
+  }
+  #home-slideshow {
+    height: 270px;
+    img {
+      height: 270px;
+      width: 700px;
+    }
   }
 }
 
 .rental-home-row-2 {
-  padding: 10px 0 0 0;
+  margin-left: -30px;
+  padding: 20px 0 0 0;
   .top-destinations-home {
     .lead {
-      text-transform: uppercase;
+      color: #696969;
+      letter-spacing: 3px;
+      margin-bottom: 3px;
+      padding-left: 8px;
+    }
+    img.home-travel-img {
+      width: 330px;
+    }
+    .home-travel-text {
+      width: 200px;
+      .lead {
+        padding: 0;
+      }
+      h4 {
+        margin: 0;
+      }
+    }
+  }
+  .featured-rentals {
+    background: #d3d3d3;
+    border-radius: 8px;
+    margin: 10px 0 10px 0;
+    padding: 10px;
+    .span3 {
+      margin-bottom: 0;
+      width: 250px;
+      .thumbnail {
+        border: none;
+        box-shadow: none;
+      }
+    }
+  }
+  hr {
+    background: #000000;
+    border: none;
+    box-shadow: 3px 3px 3px #888888;
+    color: #000000;
+    margin: 0 0 10px 0;
+    width: 350px;
+  }
+  .right-home-div {
+    border-left: 1px solid #d3d3d3;
+    padding: 5px;
+    width: 369px;
+    .season-break {
+      width: 365px;
+      .lead {
+        color: #696969;
+        letter-spacing: 3px;
+        margin-bottom: 3px;
+        padding-left: 8px;
+        text-align: center;
+      }
+      .unstyled {
+        padding-top: 120px;
+      }
     }
   }
 }
@@ -507,4 +579,8 @@ footer {
 
 .padtop15 {
   padding-top: 15px;
+}
+
+.blackborder {
+  border: 1px solid #000000;
 }
