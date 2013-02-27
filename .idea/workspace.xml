@@ -35,7 +35,7 @@
       <file leaf-file-name="show.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/villas/show.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="107" column="14" selection-start="1746" selection-end="5054" vertical-scroll-proportion="-16.958334">
+            <state line="3" column="31" selection-start="101" selection-end="101" vertical-scroll-proportion="-1.875">
               <folding />
             </state>
           </provider>
@@ -59,10 +59,28 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="custom.css.scss" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="custom.css.scss" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/custom.css.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="219" column="23" selection-start="3866" selection-end="3866" vertical-scroll-proportion="0.6330275">
+            <state line="219" column="23" selection-start="3866" selection-end="3866" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Gemfile" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Gemfile">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="18" column="34" selection-start="416" selection-end="416" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="villas_controller.rb" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/controllers/villas_controller.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="21" column="29" selection-start="490" selection-end="490" vertical-scroll-proportion="0.47468355">
               <folding />
             </state>
           </provider>
@@ -87,9 +105,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/app/assets/stylesheets/gmaps4rails.css" />
-        <option value="$PROJECT_DIR$/app/views/villas/index.html.erb" />
-        <option value="$PROJECT_DIR$/app/controllers/destinations_controller.rb" />
         <option value="$PROJECT_DIR$/app/controllers/photos_controller.rb" />
         <option value="$PROJECT_DIR$/app/uploaders/image_uploader.rb" />
         <option value="$PROJECT_DIR$/app/helpers/application_helper.rb" />
@@ -103,12 +118,15 @@
         <option value="$PROJECT_DIR$/config/routes.rb" />
         <option value="$PROJECT_DIR$/app/views/static_pages/home.html.erb" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/custom.css.scss" />
+        <option value="$PROJECT_DIR$/Gemfile" />
+        <option value="$PROJECT_DIR$/app/views/villas/show.html.erb" />
+        <option value="$PROJECT_DIR$/app/controllers/villas_controller.rb" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="197" />
-    <option name="y" value="59" />
+    <option name="x" value="289" />
+    <option name="y" value="24" />
     <option name="width" value="1082" />
     <option name="height" value="800" />
   </component>
@@ -768,7 +786,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="197" y="59" width="1082" height="800" extended-state="0" />
+    <frame x="289" y="24" width="1082" height="800" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -844,13 +862,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/helpers/application_helper.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="33" selection-start="87" selection-end="87" vertical-scroll-proportion="0.04587156">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/photos_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="95" column="59" selection-start="2372" selection-end="2372" vertical-scroll-proportion="0.0">
@@ -900,13 +911,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/villas/show.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="107" column="14" selection-start="1746" selection-end="5054" vertical-scroll-proportion="-16.958334">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/models/destination.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="22" column="21" selection-start="848" selection-end="848" vertical-scroll-proportion="0.0">
@@ -944,7 +948,28 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/custom.css.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="219" column="23" selection-start="3866" selection-end="3866" vertical-scroll-proportion="0.6330275">
+        <state line="219" column="23" selection-start="3866" selection-end="3866" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Gemfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="34" selection-start="416" selection-end="416" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/villas/show.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="31" selection-start="101" selection-end="101" vertical-scroll-proportion="-1.875">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/villas_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="21" column="29" selection-start="490" selection-end="490" vertical-scroll-proportion="0.47468355">
           <folding />
         </state>
       </provider>

@@ -1,6 +1,7 @@
 class VillasController < ApplicationController
   # GET /villas
   # GET /villas.json
+
   def index
     @villas = Villa.all
 
@@ -16,6 +17,11 @@ class VillasController < ApplicationController
     @villa = Villa.find(params[:id])
     @json = @villa.to_gmaps4rails
     @images = @villa.photos
+
+    add_breadcrumb "#{@villa.destination.name}", :destination_path
+    add_breadcrumb "Vacation Rentals", villas_path
+
+    add_breadcrumb "#{@villa.name}", villa_path
 
     #@photo = @villa.photos.build
     @photos = Photo.scoped(:conditions => [ 'villa_id = ?', @villa.id ] )

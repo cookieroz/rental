@@ -36,6 +36,7 @@ GEM
     arel (3.0.2)
     bootstrap-sass (2.2.2.0)
       sass (~> 3.2)
+    breadcrumbs_on_rails (2.3.0)
     builder (3.0.4)
     capistrano (2.14.1)
       highline
@@ -195,6 +196,7 @@ DEPENDENCIES
   active_attr (= 0.6.0)
   annotate (~> 2.4.1.beta)
   bootstrap-sass
+  breadcrumbs_on_rails (= 2.3.0)
   capistrano
   capybara
   carrierwave (= 0.5.8)
