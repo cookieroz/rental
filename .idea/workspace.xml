@@ -23,10 +23,19 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="show.html.erb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="show.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/destinations/show.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="42" selection-start="549" selection-end="549" vertical-scroll-proportion="0.21880065">
+            <state line="9" column="42" selection-start="549" selection-end="549" vertical-scroll-proportion="-5.625">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="application.html.erb" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="6" column="27" selection-start="224" selection-end="224" vertical-scroll-proportion="0.14285715">
               <folding />
             </state>
           </provider>
@@ -36,7 +45,11 @@
         <entry file="file://$PROJECT_DIR$/app/views/villas/index.html.erb">
           <provider selected="true" editor-type-id="text-editor">
             <state line="0" column="36" selection-start="36" selection-end="36" vertical-scroll-proportion="-0.0">
-              <folding />
+              <folding>
+                <marker date="1362007107000" expanded="true" signature="73:1050" placeholder="..." />
+                <marker date="1362007107000" expanded="true" signature="80:368" placeholder="..." />
+                <marker date="1362007107000" expanded="true" signature="406:1031" placeholder="..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -54,7 +67,33 @@
         <entry file="file://$PROJECT_DIR$/app/views/destinations/index.html.erb">
           <provider selected="true" editor-type-id="text-editor">
             <state line="0" column="0" selection-start="0" selection-end="37" vertical-scroll-proportion="-0.0">
-              <folding />
+              <folding>
+                <marker date="1361833363000" expanded="true" signature="62:3236" placeholder="..." />
+                <marker date="1361833363000" expanded="true" signature="82:3229" placeholder="..." />
+                <marker date="1361833363000" expanded="true" signature="106:1493" placeholder="..." />
+                <marker date="1361833363000" expanded="true" signature="150:1482" placeholder="..." />
+                <marker date="1361833363000" expanded="true" signature="169:1468" placeholder="..." />
+                <marker date="1361833363000" expanded="true" signature="269:423" placeholder="..." />
+                <marker date="1361833363000" expanded="true" signature="493:561" placeholder="..." />
+                <marker date="1361833363000" expanded="true" signature="596:668" placeholder="..." />
+                <marker date="1361833363000" expanded="true" signature="703:771" placeholder="..." />
+                <marker date="1361833363000" expanded="true" signature="806:870" placeholder="..." />
+                <marker date="1361833363000" expanded="true" signature="937:1004" placeholder="..." />
+                <marker date="1361833363000" expanded="true" signature="1039:1118" placeholder="..." />
+                <marker date="1361833363000" expanded="true" signature="1153:1234" placeholder="..." />
+                <marker date="1361833363000" expanded="true" signature="1269:1338" placeholder="..." />
+                <marker date="1361833363000" expanded="true" signature="1369:1448" placeholder="..." />
+                <marker date="1361833363000" expanded="true" signature="1518:3220" placeholder="..." />
+                <marker date="1361833363000" expanded="true" signature="1592:2277" placeholder="..." />
+                <marker date="1361833363000" expanded="true" signature="1705:1879" placeholder="..." />
+                <marker date="1361833363000" expanded="true" signature="1936:2262" placeholder="..." />
+                <marker date="1361833363000" expanded="true" signature="2321:3193" placeholder="..." />
+                <marker date="1361833363000" expanded="true" signature="2449:3178" placeholder="..." />
+                <marker date="1361833363000" expanded="true" signature="2543:3140" placeholder="..." />
+                <marker date="1361833363000" expanded="true" signature="2585:3118" placeholder="..." />
+                <marker date="1361833363000" expanded="true" signature="2868:3093" placeholder="..." />
+                <marker date="1361833363000" expanded="true" signature="2912:3066" placeholder="..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -87,7 +126,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/app/uploaders/image_uploader.rb" />
         <option value="$PROJECT_DIR$/app/helpers/application_helper.rb" />
         <option value="$PROJECT_DIR$/app/views/destinations/show.html.erb" />
         <option value="$PROJECT_DIR$/app/assets/javascripts/destinations.js.coffee" />
@@ -103,12 +141,13 @@
         <option value="$PROJECT_DIR$/app/controllers/villas_controller.rb" />
         <option value="$PROJECT_DIR$/app/views/villas/show.html.erb" />
         <option value="$PROJECT_DIR$/app/views/villas/index.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="289" />
-    <option name="y" value="24" />
+    <option name="x" value="196" />
+    <option name="y" value="39" />
     <option name="width" value="1082" />
     <option name="height" value="800" />
   </component>
@@ -768,7 +807,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="289" y="24" width="1082" height="800" extended-state="0" />
+    <frame x="196" y="39" width="1082" height="800" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -844,13 +883,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/config/environments/production.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="31" column="62" selection-start="1231" selection-end="1231" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/javascripts/application.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="14" column="25" selection-start="647" selection-end="647" vertical-scroll-proportion="0.0">
@@ -903,7 +935,11 @@
     <entry file="file://$PROJECT_DIR$/app/views/villas/index.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="36" selection-start="36" selection-end="36" vertical-scroll-proportion="0.0">
-          <folding />
+          <folding>
+            <marker date="1362007107000" expanded="true" signature="73:1050" placeholder="..." />
+            <marker date="1362007107000" expanded="true" signature="80:368" placeholder="..." />
+            <marker date="1362007107000" expanded="true" signature="406:1031" placeholder="..." />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -945,13 +981,46 @@
     <entry file="file://$PROJECT_DIR$/app/views/destinations/index.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="37" vertical-scroll-proportion="-0.0">
-          <folding />
+          <folding>
+            <marker date="1361833363000" expanded="true" signature="62:3236" placeholder="..." />
+            <marker date="1361833363000" expanded="true" signature="82:3229" placeholder="..." />
+            <marker date="1361833363000" expanded="true" signature="106:1493" placeholder="..." />
+            <marker date="1361833363000" expanded="true" signature="150:1482" placeholder="..." />
+            <marker date="1361833363000" expanded="true" signature="169:1468" placeholder="..." />
+            <marker date="1361833363000" expanded="true" signature="269:423" placeholder="..." />
+            <marker date="1361833363000" expanded="true" signature="493:561" placeholder="..." />
+            <marker date="1361833363000" expanded="true" signature="596:668" placeholder="..." />
+            <marker date="1361833363000" expanded="true" signature="703:771" placeholder="..." />
+            <marker date="1361833363000" expanded="true" signature="806:870" placeholder="..." />
+            <marker date="1361833363000" expanded="true" signature="937:1004" placeholder="..." />
+            <marker date="1361833363000" expanded="true" signature="1039:1118" placeholder="..." />
+            <marker date="1361833363000" expanded="true" signature="1153:1234" placeholder="..." />
+            <marker date="1361833363000" expanded="true" signature="1269:1338" placeholder="..." />
+            <marker date="1361833363000" expanded="true" signature="1369:1448" placeholder="..." />
+            <marker date="1361833363000" expanded="true" signature="1518:3220" placeholder="..." />
+            <marker date="1361833363000" expanded="true" signature="1592:2277" placeholder="..." />
+            <marker date="1361833363000" expanded="true" signature="1705:1879" placeholder="..." />
+            <marker date="1361833363000" expanded="true" signature="1936:2262" placeholder="..." />
+            <marker date="1361833363000" expanded="true" signature="2321:3193" placeholder="..." />
+            <marker date="1361833363000" expanded="true" signature="2449:3178" placeholder="..." />
+            <marker date="1361833363000" expanded="true" signature="2543:3140" placeholder="..." />
+            <marker date="1361833363000" expanded="true" signature="2585:3118" placeholder="..." />
+            <marker date="1361833363000" expanded="true" signature="2868:3093" placeholder="..." />
+            <marker date="1361833363000" expanded="true" signature="2912:3066" placeholder="..." />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/destinations/show.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="42" selection-start="549" selection-end="549" vertical-scroll-proportion="0.21880065">
+        <state line="9" column="42" selection-start="549" selection-end="549" vertical-scroll-proportion="-5.625">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="27" selection-start="224" selection-end="224" vertical-scroll-proportion="0.14285715">
           <folding />
         </state>
       </provider>
