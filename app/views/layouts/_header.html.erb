@@ -1,4 +1,4 @@
-<header>
+<header class="container">
   <form class="form-search pull-right">
     <div class="input-append">
       <input type="text" class="span3"
@@ -8,6 +8,9 @@
   </form>
   <div id="rental-logo">
     <%= link_to image_tag("bravovacationrentalslogo.jpg"), root_path %>
+    <% if current_user %>
+      <%= link_to "Log Out", logout_path %>
+    <% end %>
   </div>
   <nav>
     <ul class="nav pull-right">

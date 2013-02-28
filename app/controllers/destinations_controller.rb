@@ -1,4 +1,5 @@
 class DestinationsController < ApplicationController
+  before_filter :authorize, only: [:edit, :update]
   # GET /destinations
   # GET /destinations.json
   def index

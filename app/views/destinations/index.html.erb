@@ -88,4 +88,7 @@
 
 <br />
 
-<%= link_to 'New Destination', new_destination_path %>
+<% if current_user %>
+    <%= link_to 'New Destination', new_destination_path,
+                class: 'btn btn-warning btn-large' %>
+<% end %>

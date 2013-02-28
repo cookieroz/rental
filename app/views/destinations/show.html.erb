@@ -1,4 +1,9 @@
 <% provide(:title, @destination.name) %>
+
+<% if current_user %>
+    <%= link_to("Edit", edit_destination_path(@destination), class: 'btn btn-primary') %> |
+    <%= link_to("Back", destinations_path, class: 'btn') %>
+<% end %>
 <div class="destination-show">
   <div class="tabbable"> <!-- Only required for left/right tabs -->
     <ul class="nav nav-tabs">
@@ -73,8 +78,9 @@
     </div>
   </div>
 
-
-  <%= link_to 'Edit', edit_destination_path(@destination) %> |
+  <% if current_user %>
+    <%= link_to 'Edit', edit_destination_path(@destination) %> |
+  <% end %>
   <%= link_to 'Back', destinations_path %>
 </div>
 

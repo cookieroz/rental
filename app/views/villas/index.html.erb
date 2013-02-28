@@ -41,4 +41,7 @@
 
 <br />
 
-<%= link_to 'New Villa', new_villa_path %>
+<% if current_user %>
+    <%= link_to 'New Rental', new_villa_path,
+                class: 'btn btn-warning btn-large' %>
+<% end %>

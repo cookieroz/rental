@@ -8,6 +8,8 @@ $grayMediumLight: #eaeaea;
 
 $villaOrange: #FFA500;
 
+$bvrYellow: #e3b905;
+
 $villaBrightBlue: #2F96B4;
 
 $villaDarkBlue: #004151;
@@ -34,6 +36,10 @@ $captionBlue: #015368;
 
 html {
   height: 100%;
+}
+
+a {
+  color: $bvrYellow;
 }
 
 body {
@@ -63,8 +69,7 @@ header {
   padding: 10px;
   #rental-logo {
     float: left;
-    margin-top: -10px;
-    padding-left: 25px;
+    margin-top: -5px;
     text-align: center;
     width: 200px;
   }

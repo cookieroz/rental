@@ -1,5 +1,10 @@
 <% provide(:title, @villa.name) %>
 
+<% if current_user %>
+    <%= link_to("Edit", edit_villa_path(@villa), class: 'btn btn-primary') %> |
+    <%= link_to("Back", villas_path, class: 'btn') %>
+<% end %>
+
 <div class="villa-show">
   <div class="row">
     <div class="span12">
@@ -120,8 +125,9 @@
                                   :zoom => 15 }		# :zoom 0 is fully zoomed out (world view), 21 is fully zoomed in (street view)
         ) %>
 
-
-  <%= link_to 'Edit', edit_villa_path(@villa) %> |
+  <% if current_user %>
+    <%= link_to 'Edit', edit_villa_path(@villa) %> |
+  <% end %>
   <%= link_to 'Back', villas_path %>
 </div>
 
