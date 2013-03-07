@@ -17,6 +17,7 @@ gem 'ckeditor', '3.7.3'
 gem 'simple_form', '2.0.4'
 gem 'json', '1.7.5'
 gem 'breadcrumbs_on_rails', '2.3.0'
+gem 'pg_search', '0.5.7'
 
 
 # Gems used only for assets and not required

@@ -8,6 +8,10 @@ class Villa < ActiveRecord::Base
 
   has_many :photos, :as => :imageable, :dependent => :destroy, :order => :position
 
+  include PgSearch
+  multisearchable :against => [:bathrooms, :bedrooms, :content, :name, :observations,
+                               :rates, :sleeps]
+
   acts_as_gmappable
 
   def gmaps4rails_address

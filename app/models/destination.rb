@@ -18,6 +18,9 @@ class Destination < ActiveRecord::Base
     (!address.blank? && (latitude.blank? || longitude.blank?)) || address_changed?
   end
 
+  include PgSearch
+  multisearchable :against => [:name, :airport, :info, :rentcar, :todo, :weather]
+
   extend FriendlyId
   friendly_id :name, use: [:slugged, :history]
 end
