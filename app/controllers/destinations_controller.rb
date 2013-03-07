@@ -3,9 +3,7 @@ class DestinationsController < ApplicationController
   # GET /destinations
   # GET /destinations.json
   def index
-  #@destinations = Destination.all
-
-  @destinations = Destination.text_search(params[:query])
+  @destinations = Destination.all
 
     respond_to do |format|
       format.html # index.html.erb
