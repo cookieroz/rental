@@ -22,7 +22,7 @@ $darkGold: #977b32;
 
 $homeTitleBlue: #397d88;
 
-$infoColorBtn: #2F96B4;
+$bvrBlue: #0989d4;
 
 $captionBlue: #015368;
 
@@ -109,7 +109,7 @@ header {
     width: 238px;
   }
   .rental-home-map {
-    background: #ffffff;
+    background: #ffffff image-url('map.png') no-repeat right top;
     border: 1px solid #000000;
     box-shadow: 3px 3px 3px #888888;
     height: 120px;
@@ -219,6 +219,7 @@ header {
     padding: 5px;
     width: 369px;
     .season-break {
+      background: #ffffff url('seasons.jpg') no-repeat center;
       width: 365px;
       .lead {
         color: #696969;
@@ -514,6 +515,70 @@ header {
         }
       }
     }
+  }
+}
+
+/* Contact Styles */
+
+.contact-us {
+  .contact-mobile {
+    border: 1px solid $bvrYellow;
+    margin-left: 0;
+  }
+  .contact-us-form {
+    background: $bvrBlue;
+    margin-left: 10px;
+    form.contact-form {
+      background: #ffffff;
+      .control-group {
+        margin-bottom: 2px;
+        label {
+          width: 100px;
+        }
+        .controls {
+          margin-left: 110px;
+          input {
+            height: 15px;
+            padding: 2px;
+          }
+        }
+      }
+    }
+  }
+  .owner-contact {
+    border: 1px solid $bvrBlue;
+    margin: 0 auto;
+    padding: 5px;
+    text-align: center;
+    p {
+      text-align: left;
+    }
+  }
+  .bcard-contact {
+    border: 1px solid $bvrBlue;
+    margin: 10px auto;
+    padding: 5px;
+    text-align: center;
+    p {
+      text-align: left;
+    }
+  }
+  .socialmedia {
+    border: 1px solid $bvrBlue;
+    margin: 10px 5px 0 0;
+    h3 {
+      background: $bvrBlue;
+      color: #ffffff;
+      font-weight: lighter;
+      margin: 0;
+      padding-left: 5px;
+    }
+    .social-box {
+      padding: 5px;
+    }
+  }
+  .faq-contact {
+    margin: 10px auto;
   }
 }
 

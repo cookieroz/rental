@@ -11,10 +11,13 @@ Rental::Application.routes.draw do
   get "static_pages/about"
 
   get 'search', to: 'static_pages#search', as: 'search'
+  get 'contact', to: 'static_pages#contact', as: 'contact'
   get 'signup', to: 'users#new', as: 'signup'
   get 'login', to: 'sessions#new', as: 'login'
   get 'logout', to: 'sessions#destroy', as: 'logout'
   match '/admin', to: 'static_pages#admin'
+
+  resources :messages, :only => [:new, :create]
 
   resources :photos
   resources :users

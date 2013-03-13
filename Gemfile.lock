@@ -214,6 +214,7 @@ DEPENDENCIES
   jquery-fileupload-rails
   jquery-rails
   json (= 1.7.5)
+  launchy
   letter_opener (= 0.1.0)
   mini_magick (= 3.4)
   pg (= 0.14.1)

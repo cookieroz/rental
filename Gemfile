@@ -38,6 +38,7 @@ group :development, :test do
   gem 'rspec-rails', '2.8.1'
   gem 'annotate', '~> 2.4.1.beta'
   gem 'letter_opener', '0.1.0'
+  gem 'launchy'
   #gem 'capistrano', '2.13.5'
 end
 
